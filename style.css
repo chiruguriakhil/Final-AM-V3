@@ -1,0 +1,30 @@
+
+body{
+  background:#020617;
+  color:#ffffff;
+  font-family:Arial, sans-serif;
+  padding:12px;
+}
+h1{
+  text-align:center;
+  color:#22d3ee;
+}
+select,button{
+  width:100%;
+  padding:12px;
+  font-size:16px;
+  margin-bottom:10px;
+}
+.card{
+  background:#020617;
+  border:1px solid #334155;
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:12px;
+}
+.clickable{
+  cursor:pointer;
+}
+.hidden{
+  display:none;
+}

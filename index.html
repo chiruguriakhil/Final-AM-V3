@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOSS SMC 15M PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>BOSS SMC 15M PRO</h1>
+
+<select id="market">
+  <option value="^NSEI">NIFTY 50</option>
+  <option value="^NSEBANK">BANKNIFTY</option>
+  <option value="^BSESN">SENSEX</option>
+</select>
+
+<button onclick="loadMarket()">Load Market</button>
+
+<div class="card clickable" onclick="toggle('trendBox')">
+  <h2>Trend & SMC</h2>
+  <div id="trendBox" class="hidden">
+    <p id="trend"></p>
+    <p id="structure"></p>
+    <p id="ob"></p>
+  </div>
+</div>
+
+<div class="card clickable" onclick="toggle('biasBox')">
+  <h2>Tomorrow Bias</h2>
+  <div id="biasBox" class="hidden">
+    <p id="bias"></p>
+    <p id="prob"></p>
+  </div>
+</div>
+
+<div class="card clickable" onclick="toggle('tradeBox')">
+  <h2>Trade Setup</h2>
+  <div id="tradeBox" class="hidden">
+    <p id="entry"></p>
+    <p id="sl"></p>
+    <p id="target"></p>
+  </div>
+</div>
+
+<div class="card clickable" onclick="toggle('backtestBox')">
+  <h2>Backtest</h2>
+  <div id="backtestBox" class="hidden">
+    <p id="bt"></p>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
